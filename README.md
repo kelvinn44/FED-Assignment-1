@@ -61,6 +61,12 @@ If this section grows too long, you may want to split it off into a separate fil
 The photos used in this site were obtained from:
 - https://images.app.goo.gl/FV1XmwtyGoSqQcxU8
 - https://giphy.com/gifs/5sos-blender-5-seconds-of-summer-5sos5-ELxT5MqedrY5z00J6H
+- https://images.app.goo.gl/hKzrXTdBQr43THfH9
+- https://images.app.goo.gl/AyZ6W5wGmWU6S79k9
+- https://images.app.goo.gl/5TsD6ghBi6hfiMsE8
+- https://images.app.goo.gl/RuJUNpm9KhjbqRSG8
+- https://images.app.goo.gl/VMMwCEd2QbPZ9aF37
+- https://images.app.goo.gl/tgqqF7yfpXoVvC1Q7
 
 ### Acknowledgements
 
