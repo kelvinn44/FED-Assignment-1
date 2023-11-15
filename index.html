@@ -6,7 +6,9 @@
     <title>5 Seconds of Summer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/5SOS_Favicon.jpg">
     <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
@@ -14,7 +16,7 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <img src="assets/5SOSlogo.png" alt="5SOS Logo" width="170">
+            <img src="assets/5SOS_logo.png" alt="5SOS Logo" width="222px">
             <a href="merch.html">Merch</a>
             <a href="tour.html">Tour</a>
         </nav>
@@ -49,9 +51,10 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br>
 
+    <!-- Email newsletter sign up -->
     <section id="subscribe-section">
+        <img src="assets/5SOS_logo.png" alt="5SOS Logo" width="200px">
         <h2>SIGN UP</h2>
         <p>Follow and subscribe to be one of the first to know the latest on 5 Seconds of Summer.</p>
         
@@ -62,32 +65,46 @@
     </section>
 
     <!-- Image Gallery -->
-    <!-- TODO: Fix image alignment -->
-    <h1>Image Gallery</h1>
-    <div class="gallery">
-        <img src="assets/5SOS_image_1.jpg" alt="5SOS Image 1" width="600" height="400">
+    <h1 style="text-align:center; font-size: 50px; color: #ad8a35;">Image Gallery</h1>
+    <div class="row">
+        <div class="column">
+          <img src="assets/5SOS_image_1.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets/5SOS_image_2.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets/5SOS_image_3.jpg" alt="Mountains" style="width:100%">
+        </div>
     </div>
-    
-    <div class="gallery">
-        <img src="assets/5SOS_image_2.jpg" alt="5SOS Image 2" width="600" height="400">
+    <div class="row">
+        <div class="column">
+          <img src="assets/5SOS_image_4.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets/5SOS_image_5.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets/5SOS_image_6.jpg" alt="Mountains" style="width:100%">
+        </div>
     </div>
-    
-    <div class="gallery">
-        <img src="assets/5SOS_image_3.jpg" alt="5SOS Image 3" width="600" height="400">
-    </div>
-    
-    <div class="gallery">
-        <img src="assets/5SOS_image_4.jpg" alt="5SOS Image 4" width="600" height="400">
-    </div>
+    <hr></hr>
 
-    <div class="gallery">
-        <img src="assets/5SOS_image_5.jpg" alt="5SOS Image 5" width="600" height="400">
-    </div>
-
-    <div class="gallery">
-        <img src="assets/5SOS_image_6.jpg" alt="5SOS Image 6" width="600" height="400">
-    </div>
-
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/@5SOS" class="icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@5sos" class="icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/5secondsofsummer" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/5sos" class="icon"><i class="fab fa-x"></i></a>
+            <a href="https://www.instagram.com/5sos/" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://music.apple.com/us/artist/5-seconds-of-summer/538811449" class="icon"><i class="fab fa-itunes"></i></a>
+            <a href="https://open.spotify.com/artist/5Rl15oVamLq7FbSb0NNBNy" class="icon"><i class="fab fa-spotify"></i></a>
+            <a href="https://music.amazon.com/artists/B00IDXTG42/5-seconds-of-summer" class="icon"><i class="fab fa-amazon"></i></a>
+            <a href="https://www.deezer.com/en/artist/4103408" class="icon"><i class="fab fa-deezer"></i></a>
+        </div>
+    </footer>
+    
     <script src="indexScript.js"></script>
 </body>
 </html>

@@ -2,21 +2,23 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #2234ae;
+    background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
 }
 
+/* Header */
 header {
-    background-color: #333;
+    background-color: #2234ae;
     color: #fff;
-    padding: 10px;
+    padding: 4px;
     text-align: center;
+    font-size: 30px;
 }
-
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 nav a {
     color: #fff;
     text-decoration: none;
@@ -26,18 +28,19 @@ nav a {
 #hero-section {
     position: relative;
     height: 90vh;
-    background: url('assets/5sos_main.gif') center/cover no-repeat;
+    background: url('assets/5SOS_hero.gif') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: gold;
+    color: #ad8a35;
     font-size: 60px;
     text-align: center;
 }
 
-/* Email sign up */
+
+/* Email newsletter sign up */
 #subscribe-section {
-    background-color: #f0f0f0;
+    background-color: #ad8a35;
     padding: 40px;
     text-align: center;
 }
@@ -66,6 +69,8 @@ nav a {
 .slideshow-container {
   position: relative;
   margin: auto;
+
+  max-width: 100%; /* Ensure the slideshow container doesn't overflow on small screens */
 }
 
 /* Hide the images by default */
@@ -114,16 +119,73 @@ nav a {
   from {opacity: .4}
   to {opacity: 1}
 }
+/* TODO: Resposive */
+@media screen and (max-width: 500px) {
+    .prev, .next {
+        width: 100%;
+    }
+}
 
 
 /* Image gallery */
-div.gallery {
-margin: 5px;
-float: left;
-width: 720px;
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
 }
 
-div.gallery img {
-width: 100%;
-height: auto;
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+/* footer */
+footer {
+text-align: center;
+padding: 3px;
+color: white;
+padding: 10px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+.icon {
+    color: #ad8a35;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: all 0.5s ease;
+}
+.icon:hover {
+    transform: scale(1.2);
+}
+@media (max-width: 600px) {
+    .icon {
+        font-size: 24px;
+    }
+}
+    
+
+/* @media screen and (max-width:1000px){
+
+} */

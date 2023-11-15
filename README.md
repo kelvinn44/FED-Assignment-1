@@ -67,6 +67,7 @@ The photos used in this site were obtained from:
 - https://images.app.goo.gl/RuJUNpm9KhjbqRSG8
 - https://images.app.goo.gl/VMMwCEd2QbPZ9aF37
 - https://images.app.goo.gl/tgqqF7yfpXoVvC1Q7
+- https://images.app.goo.gl/f7LcEN7tk3wVjqer7
 
 ### Acknowledgements
 

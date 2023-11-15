@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2234ae;
+    background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+}
+
+/* Header */
+header {
+    background-color: #2234ae;
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    font-size: 30px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* About card */
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed for spacing */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+  
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 3px;
+    color: white;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+.icon {
+    color: #ad8a35;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: all 0.5s ease;
+}
+.icon:hover {
+    transform: scale(1.2);
+}
+@media (max-width: 600px) {
+    .icon {
+        font-size: 24px;
+    }
+}
