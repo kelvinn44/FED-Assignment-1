@@ -8,20 +8,20 @@ body {
 
 /* Header */
 header {
-    background-color: #2234ae;
-    color: #fff;
-    padding: 4px;
-    text-align: center;
-    font-size: 30px;
+  background-color: #2234ae;
+  color: #fff;
+  padding: 4px;
+  text-align: center;
+  font-size: 30px;
 }
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 nav a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 
@@ -120,12 +120,11 @@ nav a {
   to {opacity: 1}
 }
 /* TODO: Resposive */
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
     .prev, .next {
         width: 100%;
     }
-}
-
+} */
 
 /* Image gallery */
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -184,8 +183,3 @@ padding: 10px;
         font-size: 24px;
     }
 }
-    
-
-/* @media screen and (max-width:1000px){
-
-} */

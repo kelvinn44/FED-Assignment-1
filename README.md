@@ -1,64 +1,35 @@
 # FED-Assignment-1
 
-One or two paragraphs providing an overview of your project. Tell us about your project.
-
-Essentially, this part is your sales pitch.
+I am doing a website for 5 Seconds of Summer, often shortened to 5SOS. 5SOS is an Australian pop rock band that consists of four members: Luke Hemmings (lead vocals and rhythm guitar), Michael Clifford (lead guitar and vocals), Calum Hood (bass and vocals), and Ashton Irwin (drums and vocals). When I was visiting their official website, I found it to be quite bland, so I'm revamping it to make it more engaging and informative. I've created a home, about, merch, and tour page for this project. Users can find out more about the band's history, albums, videos, merch, or make a request for them to play for you and their tour schedule on this website.
  
 ## Design Process
  
-Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+As a user of this website, I would want to use it to find out more about 5 Seconds of Summer. For example in the home page i can check out videos they have, images, and even sign up for updates via email. I can also get to know more about the band's history, members, and discography when I'm on the about page. Furthermore, in the merch page, as a user, I would want to browse merch from the band. Lastly, as a user, I would want to make a request for them to play for me or see their tour schedule in the tour page.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+- Adobe XD link for the desktop view of the wireframes and flow: https://xd.adobe.com/view/66d34588-83ce-4e87-a8d8-9b50bdd7b2e7-3380/
+- Adobe XD link for the mobile view of the wireframes and flow: https://xd.adobe.com/view/e21c9f2c-27a3-4703-918a-be70c8e3b5d5-b74f/
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
-These files should themselves either be included as a pdf file in the project itself (in an separate directory)
-Include the Adobe XD wireframe as a folder. You can include the XD share url. 
-
-## Features
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
+## Features 
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+1. In the home page, user can click on either the left or right button in the video carousel to browse through videos from the band.
+2. In the footer of every page, user can click on the different social icons to go to the band official medias.
 
 ### Features Left to Implement
-- Another feature idea
-
-## Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
-
+- Album carousel to browse through the various albums from the band in the about page.
+- The band tour schedule list in the tour page.
+- Add item to cart in the merch page (if possible).
 
 ## Testing
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Responsiveness has not been implemented yet, so it will look bad on smaller screen sizes. (To be completed in the final submission)
 
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The text about the band in the about page was copied from the [Wikipedia article of 5SOS](https://en.wikipedia.org/wiki/5_Seconds_of_Summer)
 
 ### Media
-The photos used in this site were obtained from:
+The photos and gif used in this site were obtained from:
 - https://images.app.goo.gl/FV1XmwtyGoSqQcxU8
 - https://giphy.com/gifs/5sos-blender-5-seconds-of-summer-5sos5-ELxT5MqedrY5z00J6H
 - https://images.app.goo.gl/hKzrXTdBQr43THfH9
@@ -71,4 +42,4 @@ The photos used in this site were obtained from:
 
 ### Acknowledgements
 
-- I received inspiration for this project from https://www.edsheeran.com/
+- I received inspiration for this project from https://www.edsheeran.com/ and https://5sos.com/
