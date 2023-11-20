@@ -23,18 +23,37 @@ nav a {
   color: #fff;
   text-decoration: none;
 }
+@media screen and (max-width: 1000px) {
+  header {
+    font-size: 20px;
+  }
+  nav a {
+    padding: 0px;
+  }
+  img {
+    width: 100px;
+  }
+}
 
 
 #hero-section {
     position: relative;
     height: 90vh;
-    background: url('assets/5SOS_hero.gif') center/cover no-repeat;
+    background: url('../images/5SOS_hero.gif') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ad8a35;
     font-size: 60px;
     text-align: center;
+}
+@media screen and (max-width: 1000px) {
+    #hero-section {
+        font-size: 15px;
+        text-align: center;
+        height: 95vh;
+    }
+  
 }
 
 
@@ -71,6 +90,7 @@ nav a {
   margin: auto;
 
   max-width: 100%; /* Ensure the slideshow container doesn't overflow on small screens */
+  /* height: 700px; */
 }
 
 /* Hide the images by default */
@@ -125,6 +145,7 @@ nav a {
         width: 100%;
     }
 } */
+
 
 /* Image gallery */
 /* Three image containers (use 25% for four, and 50% for two, etc) */
