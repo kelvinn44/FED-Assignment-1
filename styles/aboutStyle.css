@@ -7,6 +7,7 @@ body {
 }
 
 /* Header */
+/* figure out text size issue */
 header {
     background-color: #2234ae;
     color: #fff;
@@ -14,14 +15,30 @@ header {
     text-align: center;
     font-size: 30px;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        font-size: 20px;
+    }
+
+    nav a {
+        padding: 0px;
+    }
+
+    img {
+        width: 100px;
+    }
 }
 
 
@@ -42,7 +59,7 @@ nav a {
 }
   
 .title {
-    color: grey;
+    color: whitesmoke;
     font-size: 18px;
 }
 

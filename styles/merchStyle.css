@@ -23,19 +23,38 @@ nav a {
     color: #fff;
     text-decoration: none;
 }
+@media screen and (max-width: 1000px) {
+    header {
+      font-size: 20px;
+    }
+    nav a {
+      padding: 0px;
+    }
+    img {
+      width: 100px;
+    }
+  }
 
 
 /* Product card */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px; /* Adjust as needed for spacing between cards */
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
     text-align: center;
     font-family: arial;
+    color: white;
+    padding: 10px;
 }
 
 .price {
-    color: grey;
+    color: whitesmoke;
     font-size: 22px;
 }
 

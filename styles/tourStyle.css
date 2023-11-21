@@ -23,9 +23,107 @@ nav a {
     color: #fff;
     text-decoration: none;
 }
+@media screen and (max-width: 1000px) {
+    header {
+        font-size: 20px;
+    }
+
+    nav a {
+        padding: 0px;
+    }
+
+    img {
+        width: 100px;
+    }
+}
 
 
+/* Tour request section */
+.request-tour {
+    background-color: #ad8a35;
+    /* padding: 40px; */
+    margin: 20px auto;
+    /* Adding margin for space on top and bottom */
+    padding: 10px;
+    /* Padding for left and right within the container */
+}
 
+.request-tour-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.request-tour h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.request-tour p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.request-tour form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.request-tour form input[type="text"],
+.request-tour form input[type="email"],
+.request-tour form input[type="tel"],
+.request-tour form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.request-tour form textarea {
+    resize: vertical;
+}
+
+.request-tour form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.request-tour form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Tour date list */
+.tour-dates {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.tour-dates h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.tour-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tour-list li {
+    margin-bottom: 15px;
+}
+
+.date {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.location {
+    color: #666;
+}
 
 
 /* footer */

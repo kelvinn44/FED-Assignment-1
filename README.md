@@ -39,6 +39,11 @@ The photos and gif used in this site were obtained from:
 - https://images.app.goo.gl/VMMwCEd2QbPZ9aF37
 - https://images.app.goo.gl/tgqqF7yfpXoVvC1Q7
 - https://images.app.goo.gl/f7LcEN7tk3wVjqer7
+- https://images.app.goo.gl/pdfun8cTebXg1BAv8
+- https://images.app.goo.gl/31zisYyLGZRCeZ396
+- https://images.app.goo.gl/YdXcWbZftRmPcKCf6
+- https://images.app.goo.gl/sp6VwzqfKjwRwtun9
+- https://www.5sosstore.com/
 
 ### Acknowledgements
 
