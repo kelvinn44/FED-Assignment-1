@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #2234ae;
-    background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+    background-image: linear-gradient(315deg, #2234ae 20%, #ad8a35 80%);
 }
 
 /* Header */
@@ -14,33 +14,42 @@ header {
     text-align: center;
     font-size: 30px;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
 }
+
+nav i {
+    color: white;
+}
+
 @media screen and (max-width: 1000px) {
     header {
-      font-size: 20px;
+        font-size: 20px;
     }
+
     nav a {
-      padding: 0px;
+        padding: 0px;
     }
+
     img {
-      width: 100px;
+        width: 100px;
     }
-  }
+}
 
 
 /* Product card */
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 10px; /* Adjust as needed for spacing between cards */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .card {
@@ -74,6 +83,12 @@ nav a {
     opacity: 0.7;
 }
 
+@media (max-width: 1000px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 
 /* footer */
 footer {
@@ -81,20 +96,24 @@ footer {
     padding: 3px;
     color: white;
 }
+
 .social-icons {
     display: flex;
     justify-content: center;
 }
+
 .icon {
     color: #ad8a35;
     font-size: 30px;
     margin: 0 10px;
     transition: all 0.5s ease;
 }
+
 .icon:hover {
     transform: scale(1.2);
 }
-@media (max-width: 600px) {
+
+@media (max-width: 1000px) {
     .icon {
         font-size: 24px;
     }

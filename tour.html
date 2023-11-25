@@ -24,21 +24,22 @@
         </nav>
     </header>
     
+    <!-- Request tour form -->
     <section class="request-tour">
         <div class="request-tour-content">
           <h2>Request a Tour</h2>
-          <p>Fill out the form below to request a tour in your country or book us for a private event.</p>
+          <p>Fill out the form below to request a tour in your country or book us for a private event/show.</p>
           <form action="#" method="post">
-            <label for="name">Your Name:</label>
+            <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
       
-            <label for="email">Your Email:</label>
+            <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" required>
       
-            <label for="phone">Your Phone:</label>
+            <label for="phone">Contact Number:</label>
             <input type="tel" id="phone" name="phone">
       
-            <label for="message">Message:</label>
+            <label for="message">Message Request:</label>
             <textarea id="message" name="message" rows="4"></textarea>
       
             <input type="submit" value="Submit">
@@ -46,21 +47,193 @@
         </div>
       </section>
 
+      <!-- Tour dates accordion -->
       <section class="tour-dates">
-        <h2>Tour Dates</h2>
-        <ul class="tour-list">
-          <li>
-            <span class="date">November 25, 2023</span>
-            <span class="location">Venue Name - City, Country</span>
-          </li>
-          <li>
-            <span class="date">December 3, 2023</span>
-            <span class="location">Another Venue - City, Country</span>
-          </li>
-          <!-- ... -->
-        </ul>
+        <h2 style="text-align:center; font-size: 50px; color: #ad8a35;">Tour Dates</h2>
+        <button class="accordion">Asia and Middle East <span class="accordion-icon">+</span>
+        </button>
+      <div class="panel">
+        <div class="info-row">
+          <div class="info-block">
+            <h3>Dates</h3>
+            <p>15 January 2024</p>
+          </div>
+          <div class="info-block">
+            <h3>Locations</h3>
+            <p>Al Dana Amphitheatre</p>
+            <p>Sakhir, Bahrain</p>
+          </div>
+
+          <div class="info-block">
+            <p>19 & 20 January 2024</p>
+          </div>
+          <div class="info-block">
+            <p>The Sevens Stadium</p>
+            <p>Dubai</p>
+          </div>
+
+          <div class="info-block">
+            <p>27 & 28 January 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Kyocera Dome</p>
+            <p>Osaka, Japan</p>
+          </div>
+
+          <div class="info-block">
+            <p>31 January 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Tokyo Dome</p>
+            <p>Tokyo, Japan</p>
+          </div>
+
+          <div class="info-block">
+            <p>03 February 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Kaohsiung National Stadium</p>
+            <p>Kaohsiung, Taiwan</p>
+          </div>
+
+          <div class="info-block">
+            <p>10 February 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Rajamangala Stadium</p>
+            <p>Bangkok, Thailand</p>
+          </div>
+
+          <div class="info-block">
+            <p>16 February 2024</p>
+          </div>
+          <div class="info-block">
+            <p>National Stadium</p>
+            <p>Singapore, Singapore</p>
+          </div>
+
+          <div class="info-block">
+            <p>24 February 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Bukit Jalil National Stadium</p>
+            <p>Kuala Lumpur, Malaysia</p>
+          </div>
+
+          <div class="info-block">
+            <p>02 March 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Gelora Bung Karno Stadium</p>
+            <p>Jakarta, Indonesia</p>
+          </div>
+
+          <div class="info-block">
+            <p>09 March 2024</p>
+          </div>
+          <div class="info-block">
+            <p>SMDC Festival Grounds</p>
+            <p>Manila, Philippines</p>
+          </div>
+
+          <div class="info-block">
+            <p>16 March 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Mahalaxmi Race Course</p>
+            <p>Mumbai, India</p>
+          </div>
+        </div>
+      </div>
+      
+      <button class="accordion">Latin America <span class="accordion-icon">+</span>
+      </button>
+      <div class="panel">
+        <div class="info-row">
+          <div class="info-block">
+            <h3>Dates</h3>
+            <p>TBA September 2024</p>
+          </div>
+          <div class="info-block">
+            <h3>Locations</h3>
+            <p>Rock in Rio</p>
+            <p>Rio de Janeiro, Brazil</p>
+          </div>
+        </div>
+      </div>
+      
+      <button class="accordion">Europe <span class="accordion-icon">+</span>
+      </button>
+      <div class="panel">
+        <div class="info-row">
+          <div class="info-block">
+            <h3>Dates</h3>
+            <p>08 & 09 June 2024</p>
+          </div>
+          <div class="info-block">
+            <h3>Locations</h3>
+            <p>Lucca Summer Festival</p>
+            <p>Lucca, Italy</p>
+          </div>
+
+          <div class="info-block">
+            <p>21 June 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Hurricane Festival</p>
+            <p>Scheessel, Germany</p>
+          </div>
+
+          <div class="info-block">
+            <p>04 July 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Stavernfestivalen</p>
+            <p>Stavern, Norway</p>
+          </div>
+
+          <div class="info-block">
+            <p>12 & 13 July 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Polsat Plus Arena</p>
+            <p>Gdansk, Poland</p>
+          </div>
+
+          <div class="info-block">
+            <p>20 July 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Puskás Aréna</p>
+            <p>Budapest, Hungary</p>
+          </div>
+
+          <div class="info-block">
+            <p>27 July 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Park 360</p>
+            <p>Hradec Kralove, Czech Republic</p>
+          </div>
+
+          <div class="info-block">
+            <p>03 & 04 August 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Darius and Girėnas Stadium</p>
+            <p>Kaunas, Lithuania</p>
+          </div>
+
+          <div class="info-block">
+            <p>07 September 2024</p>
+          </div>
+          <div class="info-block">
+            <p>Larnaca Marina</p>
+            <p>Cyprus</p>
+          </div>
+        </div>
+      </div>
       </section>
-    
 
     <hr></hr>
 
@@ -79,5 +252,6 @@
         </div>
     </footer>
     
+    <script src="scripts/tourScript.js"></script>
 </body>
 </html>

@@ -93,9 +93,20 @@ nav a {
   /* height: 700px; */
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+
+.mySlides iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Next & previous buttons */

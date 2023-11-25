@@ -41,12 +41,11 @@ nav a {
     }
 }
 
-
 /* About card */
 .card-container {
     display: flex;
-    justify-content: space-around; /* Adjust as needed for spacing */
-    flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
 }
 
 .card {
@@ -182,7 +181,7 @@ footer {
 .icon:hover {
     transform: scale(1.2);
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .icon {
         font-size: 24px;
     }

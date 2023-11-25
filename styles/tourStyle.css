@@ -14,15 +14,18 @@ header {
     text-align: center;
     font-size: 30px;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 nav a {
     color: #fff;
     text-decoration: none;
 }
+
 @media screen and (max-width: 1000px) {
     header {
         font-size: 20px;
@@ -41,15 +44,14 @@ nav a {
 /* Tour request section */
 .request-tour {
     background-color: #ad8a35;
-    /* padding: 40px; */
+    padding: 20px;
     margin: 20px auto;
-    /* Adding margin for space on top and bottom */
-    padding: 10px;
-    /* Padding for left and right within the container */
+    max-width: 1000px;
+    box-sizing: border-box;
 }
 
 .request-tour-content {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
@@ -73,7 +75,7 @@ nav a {
 .request-tour form input[type="tel"],
 .request-tour form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 15px;
 }
 
@@ -94,35 +96,73 @@ nav a {
     background-color: #0056b3;
 }
 
+@media screen and (max-width: 1000px) {
+    .request-tour {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 360px;
+    }
 
-/* Tour date list */
+    .request-tour-content {
+        max-width: 360px;
+    }
+}
+
+/* Tour date accordion */
 .tour-dates {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 20px auto;
 }
 
-.tour-dates h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
+.accordion {
+    background-color: #eee;
+    color: #ad8a35;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
 }
 
-.tour-list {
-    list-style: none;
-    padding: 0;
+.active,
+.accordion:hover {
+    background-color: #ccc;
 }
 
-.tour-list li {
-    margin-bottom: 15px;
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
 }
 
-.date {
-    font-weight: bold;
-    display: block;
+.info-block {
+    flex: 1 1 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.info-block h3 {
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
-.location {
-    color: #666;
+.info-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.accordion-icon {
+    float: right;
+}
+
+@media screen and (max-width: 1000px) {
+    .tour-dates {
+        max-width: 360px;
+    }
 }
 
 
@@ -132,20 +172,24 @@ footer {
     padding: 3px;
     color: white;
 }
+
 .social-icons {
     display: flex;
     justify-content: center;
 }
+
 .icon {
     color: #ad8a35;
     font-size: 30px;
     margin: 0 10px;
     transition: all 0.5s ease;
 }
+
 .icon:hover {
     transform: scale(1.2);
 }
-@media (max-width: 600px) {
+
+@media (max-width: 1000px) {
     .icon {
         font-size: 24px;
     }
