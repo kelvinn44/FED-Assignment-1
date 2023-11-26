@@ -1,4 +1,4 @@
-# FED-Assignment-1
+# FED-Assignment-1 (S10262567K)
 
 I am doing a website for 5 Seconds of Summer, often shortened to 5SOS. 5SOS is an Australian pop rock band that consists of four members: Luke Hemmings (lead vocals and rhythm guitar), Michael Clifford (lead guitar and vocals), Calum Hood (bass and vocals), and Ashton Irwin (drums and vocals). When I was visiting their official website, I found it to be quite bland, so I'm revamping it to make it more engaging and informative. I've created a home, about, merch, and tour page for this project. Users can find out more about the band's history, albums, videos, merch, or make a request for them to play for you and their tour schedule on this website.
  
@@ -16,7 +16,6 @@ As a user of this website, I would want to use it to find out more about 5 Secon
 
 ### Features Left to Implement
 - Album carousel to browse through the various albums from the band in the about page.
-- The band tour schedule list in the tour page.
 - Add item to cart in the merch page (if possible).
 
 ## Testing

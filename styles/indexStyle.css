@@ -28,7 +28,7 @@ nav a {
     font-size: 20px;
   }
   nav a {
-    padding: 0px;
+    padding: 0;
   }
   img {
     width: 100px;
@@ -89,7 +89,7 @@ nav a {
   position: relative;
   margin: auto;
 
-  max-width: 100%; /* Ensure the slideshow container doesn't overflow on small screens */
+  max-width: 100%; /*Ensure the slideshow container doesn't overflow on small screens*/
   /* height: 700px; */
 }
 
@@ -150,12 +150,12 @@ nav a {
   from {opacity: .4}
   to {opacity: 1}
 }
-/* TODO: Resposive */
-/* @media screen and (max-width: 500px) {
-    .prev, .next {
-        width: 100%;
-    }
-} */
+
+@media screen and (max-width: 1000px) {
+  .prev, .next {
+    font-size: 40px;
+  }
+}
 
 
 /* Image gallery */
@@ -183,7 +183,7 @@ nav a {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     .column {
         width: 100%;
     }
@@ -210,7 +210,7 @@ padding: 10px;
 .icon:hover {
     transform: scale(1.2);
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .icon {
         font-size: 24px;
     }

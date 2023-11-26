@@ -44,8 +44,8 @@ nav a {
 /* About card */
 .card-container {
     display: flex;
-    justify-content: space-evenly; 
-    flex-wrap: wrap; 
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -56,7 +56,7 @@ nav a {
     color: white;
     /* flex-basis: 45%; */
 }
-  
+
 .title {
     color: whitesmoke;
     font-size: 18px;
@@ -72,15 +72,37 @@ a:hover {
     opacity: 0.7;
 }
 
+@media screen and (max-width: 1000px) {
+    .card-container {
+        justify-content: center;
+        /* Center the cards on smaller screens */
+    }
+
+    .card {
+        flex-basis: calc(100% - 20px);
+        /* Arrange in 2 columns with spacing */
+        max-width: calc(100% - 20px);
+        padding: 50px;
+        /* Adjust padding for smaller devices */
+        margin-bottom: 10px;
+        /* Adjust margin for smaller devices */
+    }
+}
+
 
 /* Album carousel */
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
     position: relative;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px; /* Small margins on the left and right */
+    box-sizing: border-box;
 }
 
 /* Hide the images by default */
@@ -88,26 +110,53 @@ a:hover {
     display: none;
 }
 
+/* Adjusting image size for small devices */
+.mySlides img {
+    width: 40%; /*Make images responsive*/
+
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline block spacing */
+    margin: 0 auto; /* Center the image */
+    max-height: 750px; /* Set a maximum height if needed */
+  }
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    margin: 20px 0; /* Add margin for separation */
+  }
+
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
     cursor: pointer;
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    /* top: 40%;
     width: auto;
+
     padding: 16px;
     margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    -webkit-user-select: none;
+    -webkit-user-select: none; */
+    top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -134,11 +183,21 @@ a:hover {
 /* Container for image text */
 .caption-container {
     text-align: center;
-    background-color: #222;
+    background-color: #ad8a35;
     padding: 2px 16px;
     color: white;
+
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
+/* Thumbnail images */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+  }
+  
 .row:after {
     content: "";
     display: table;
@@ -147,8 +206,13 @@ a:hover {
 
 /* Six columns side by side */
 .column {
-    float: left;
-    width: 16.66%;
+    /* float: left;
+    width: 10%; */
+    /* max-width: 1000px; */
+    flex: 0 0 calc(10% - 10px); /* Adjust width for small devices */
+  max-width: calc(10% - 10px); /* Adjust maximum width for small devices */
+  padding: 0 55px; /* Small padding for spacing */
+  box-sizing: border-box;
 }
 
 /* Add a transparency effect for thumnbail images */
