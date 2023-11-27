@@ -1,0 +1,594 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2234ae;
+    background-image: linear-gradient(315deg, #2234ae 20%, #8e774c 80%);
+}
+
+/* Header */
+header {
+    background-color: #2234ae;
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/** index.html style start **/
+#hero-section {
+    position: relative;
+    height: 90vh;
+    background: url('../images/5SOS_hero.gif') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e8ad28;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* Email newsletter sign up */
+#subscribe-section {
+    background-color: #ad8a35;
+    padding: 40px;
+    text-align: center;
+}
+
+#subscribe-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#email-input {
+    padding: 10px;
+    width: 200px;
+}
+
+#subscribe-button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Video Carousel */
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+
+.videoSlides {
+    display: none;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videoSlides iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Next & previous buttons */
+.prev-index,
+.next-index {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next-index {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-index:hover,
+.next-index:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Image gallery */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+/** index.html style end **/
+
+
+/** about.html style start **/
+.aboutHeader{
+    text-align:center; 
+    font-size: 50px; 
+    color: #e8ad28;
+}
+
+/* About card */
+.card-container-about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card-about {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    color: white;
+    padding: 10px;
+}
+
+.title {
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* Album carousel */
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Hide the images by default */
+.albumSlides {
+    display: none;
+}
+
+/* Adjusting image size for small devices */
+.albumSlides img {
+    width: 40%;
+    /*Make images responsive*/
+
+    max-width: 100%;
+    /* Make the image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Remove any default inline block spacing */
+    margin: 0 auto;
+    /* Center the image */
+    max-height: 750px;
+    /* Set a maximum height if needed */
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    margin: 20px 0;
+    /* Add margin for separation */
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    /* top: 40%;
+    width: auto;
+
+    padding: 16px;
+    margin-top: -50px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none; */
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #ad8a35;
+    /* padding: 2px 16px; */
+    color: white;
+
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Thumbnail images */
+.row-about {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.row-about:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-about {
+    /* float: left;
+    width: 10%; */
+    /* max-width: 1000px; */
+    /* flex: 0 0 calc(10% - 10px); */
+
+    /* Adjust width for small devices */
+    max-width: calc(10% - 10px);
+
+    /* Adjust maximum width for small devices */
+    padding: 0 55px;
+
+    /* Small padding for spacing */
+    box-sizing: border-box;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/** about.html style end **/
+
+
+/** merch.html style start **/
+/* Product card */
+.card-container-merch {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card-merch {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    color: white;
+    padding: 10px;
+}
+
+.price {
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+.card-merch button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card-merch button:hover {
+    opacity: 0.7;
+}
+
+/** merch.html style end **/
+
+
+/** tour.html style start **/
+/* Tour request section */
+.request-tour {
+    background-color: #ad8a35;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.request-tour-content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.request-tour h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.request-tour p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.request-tour form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.request-tour form input[type="text"],
+.request-tour form input[type="email"],
+.request-tour form input[type="tel"],
+.request-tour form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.request-tour form textarea {
+    resize: vertical;
+}
+
+.request-tour form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.request-tour form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Tour date accordion */
+.tour-dates {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #ad8a35;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.info-block {
+    flex: 1 1 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.info-block h3 {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.info-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.accordion-icon {
+    float: right;
+}
+
+/** tour.html style end **/
+
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 3px;
+    color: white;
+    padding: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    color: #ad8a35;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: all 0.5s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    /* Header */
+    header {
+        font-size: 20px;
+    }
+
+    nav a {
+        padding: 0;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    /* index.html */
+    #hero-section {
+        font-size: 15px;
+        text-align: center;
+        height: 95vh;
+    }
+
+    .prev-index,
+    .next-index {
+        font-size: 40px;
+    }
+
+    #email-input {
+        width: 140px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    /* about.html  */
+    .aboutHeader{
+        font-size: 25px;
+    }
+
+    .card-container-about {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* merch.html */
+    .card-container-merch {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* tour.html  */
+    .request-tour {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 360px;
+    }
+
+    .request-tour-content {
+        max-width: 360px;
+    }
+
+    .tour-dates {
+        max-width: 360px;
+    }
+
+    /* footer */
+    .icon {
+        font-size: 24px;
+    }
+}

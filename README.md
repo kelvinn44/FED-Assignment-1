@@ -1,9 +1,7 @@
 # FED-Assignment-1 (S10262567K)
-
 I am doing a website for 5 Seconds of Summer, often shortened to 5SOS. 5SOS is an Australian pop rock band that consists of four members: Luke Hemmings (lead vocals and rhythm guitar), Michael Clifford (lead guitar and vocals), Calum Hood (bass and vocals), and Ashton Irwin (drums and vocals). When I was visiting their official website, I found it to be quite bland, so I'm revamping it to make it more engaging and informative. I've created a home, about, merch, and tour page for this project. Users can find out more about the band's history, albums, videos, merch, or make a request for them to play for you and their tour schedule on this website.
  
 ## Design Process
- 
 As a user of this website, I would want to use it to find out more about 5 Seconds of Summer. For example in the home page i can check out videos they have, images, and even sign up for updates via email. I can also get to know more about the band's history, members, and discography when I'm on the about page. Furthermore, in the merch page, as a user, I would want to browse merch from the band. Lastly, as a user, I would want to make a request for them to play for me or see their tour schedule in the tour page.
 
 - Adobe XD link for the desktop view of the wireframes and flow: https://xd.adobe.com/view/66d34588-83ce-4e87-a8d8-9b50bdd7b2e7-3380/
@@ -12,18 +10,20 @@ As a user of this website, I would want to use it to find out more about 5 Secon
 ## Features 
 ### Existing Features
 1. In the home page, user can click on either the left or right button in the video carousel to browse through videos from the band.
-2. In the footer of every page, user can click on the different social icons to go to the band official medias.
+2. In the about page, user can view the album carousel just like the video carousel in the home page.
+3. In the tour page, there is a accordion to let user view the different tour dates and location that the band is playing.
+4. In the footer of every page, user can click on the different social icons to go to the band official medias.
 
 ### Features Left to Implement
-- Album carousel to browse through the various albums from the band in the about page.
 - Add item to cart in the merch page (if possible).
 
 ## Testing
-
-Responsiveness has not been implemented yet, so it will look bad on smaller screen sizes. (To be completed in the final submission)
+1. Merch page:
+   - When you are in responsive mode of max-width: 600px, the product cards will be formatted from a three by three row to a one by nine row.
+2. Tour page:
+   - There is a accordion (collapsible content) at the bottom of the page which displays the band tour infomation like dates and location when clicked on. There are 3 accordion to differentiate the world's continents.
 
 ## Credits
-
 ### Content
 - The text about the band in the about page was copied from the [Wikipedia article of 5SOS](https://en.wikipedia.org/wiki/5_Seconds_of_Summer)
 
@@ -45,5 +45,4 @@ The photos and gif used in this site were obtained from:
 - https://www.5sosstore.com/
 
 ### Acknowledgements
-
 - I received inspiration for this project from https://www.edsheeran.com/ and https://5sos.com/
