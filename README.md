@@ -14,13 +14,10 @@ As a user of this website, I would want to use it to find out more about 5 Secon
 3. In the tour page, there is a accordion to let user view the different tour dates and location that the band is playing.
 4. In the footer of every page, user can click on the different social icons to go to the band official medias.
 
-### Features Left to Implement
-- Add item to cart in the merch page (if possible).
-
 ## Testing
-1. Merch page:
+2. Merch page:
    - When you are in responsive mode of max-width: 600px, the product cards will be formatted from a three by three row to a one by nine row.
-2. Tour page:
+3. Tour page:
    - There is a accordion (collapsible content) at the bottom of the page which displays the band tour infomation like dates and location when clicked on. There are 3 accordion to differentiate the world's continents.
 
 ## Credits
