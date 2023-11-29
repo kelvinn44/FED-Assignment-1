@@ -36,8 +36,81 @@ nav a {
     align-items: center;
     justify-content: center;
     color: #e8ad28;
-    font-size: 60px;
+    font-size: 48px;
     text-align: center;
+}
+
+/* Video Carousel */
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+
+.videoSlides {
+    display: none;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videoSlides iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.prev-index,
+.next-index {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next-index {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-index:hover,
+.next-index:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /* Email newsletter sign up */
@@ -66,91 +139,13 @@ nav a {
     cursor: pointer;
 }
 
-/* Video Carousel */
-* {
-    box-sizing: border-box
-}
-
-.slideshow-container {
-    position: relative;
-    margin: auto;
-    max-width: 100%;
-}
-
-.videoSlides {
-    display: none;
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-}
-
-.videoSlides iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-/* Next & previous buttons */
-.prev-index,
-.next-index {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 80px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next-index {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev-index:hover,
-.next-index:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.active {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
 /* Image gallery */
-/* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
     float: left;
     width: 33.33%;
     padding: 5px;
 }
 
-/* Clear floats after image containers */
 .row::after {
     content: "";
     clear: both;
@@ -165,7 +160,6 @@ nav a {
     flex: 33.33%;
     padding: 5px;
 }
-
 /** index.html style end **/
 
 
@@ -210,17 +204,16 @@ a:hover {
 }
 
 /* Album carousel */
-.container {
+.albumContainer {
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding-right: 10px;
     box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Hide the images by default */
 .albumSlides {
     display: none;
 }
@@ -232,21 +225,10 @@ a:hover {
     margin: 0 auto;
 }
 
-/* Container for image text */
-.caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-    margin: 20px 0; /* Add margin for separation */
-}
-
-/* Add a pointer when hovering over the thumbnail images */
 .cursor {
     cursor: pointer;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -271,7 +253,7 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Container for image text */
+/* Container for image caption */
 .caption-container {
     text-align: center;
     background-color: #ad8a35;
@@ -286,7 +268,9 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 -5px;
+    margin: 5px auto;
+    width: 100%;
+    text-align: center;
 }
 
 .row-about:after {
@@ -296,19 +280,18 @@ a:hover {
 }
 
 .column-about {
-    width: 10%;
+    width: 8%;
     box-sizing: border-box;
 }
 
-.demo {
+.animation {
     opacity: 0.6;
 }
 
 .active,
-.demo:hover {
+.animation:hover {
     opacity: 1;
 }
-
 /** about.html style end **/
 
 
@@ -350,12 +333,11 @@ a:hover {
 .card-merch button:hover {
     opacity: 0.7;
 }
-
 /** merch.html style end **/
 
 
 /** tour.html style start **/
-/* Tour request section */
+/* Request tour form section */
 .request-tour {
     background-color: #ad8a35;
     padding: 20px;
@@ -410,7 +392,7 @@ a:hover {
     background-color: #0056b3;
 }
 
-/* Tour date accordion */
+/* Tour dates accordion */
 .tour-dates {
     max-width: 1000px;
     margin: 20px auto;
@@ -460,7 +442,6 @@ a:hover {
 .accordion-icon {
     float: right;
 }
-
 /** tour.html style end **/
 
 
@@ -489,8 +470,8 @@ footer {
 }
 
 
-/* Responsive */
-@media screen and (max-width: 600px) {
+/* Responsiveness */
+@media screen and (max-width: 638px) {
     /* Header */
     header {
         font-size: 20px;
@@ -506,7 +487,7 @@ footer {
 
     /* index.html */
     #hero-section {
-        font-size: 15px;
+        font-size: 18px;
         text-align: center;
         height: 95vh;
     }
@@ -524,7 +505,7 @@ footer {
         width: 100%;
     }
 
-    /* about.html  */
+    /* about.html */
     .aboutHeader{
         font-size: 25px;
     }
@@ -542,7 +523,7 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /* tour.html  */
+    /* tour.html */
     .request-tour {
         padding: 20px;
         margin: 20px auto;
